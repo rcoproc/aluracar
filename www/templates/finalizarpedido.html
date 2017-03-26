@@ -4,7 +4,7 @@
       <div class="item item-text-wrap">
         <div class="item item-divider">
           <h2>{{carroFinalizado.nome}}</h2>
-          <h2>R{{carroFinalizado.preco | currency}}</h2>
+          <h2>{{carroFinalizado.preco | finance:true:2}}</h2>
         </div>
         <div class="item item-text-wrap">
           <div class="list">
@@ -27,6 +27,6 @@
           </div>
         </div>
       </div>
-      <a class="button button-positive button-full" ng-click="finalizarPedido()">Realizar um sonho</a>
+      <a class="button button-positive button-full" ng-click="finalizarPedido()">Realizar o agendamento do Test Drive</a>
     </ion-content>
 </ion-view>
